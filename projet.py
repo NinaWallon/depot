@@ -154,9 +154,9 @@ res = (res_1, res_2, res_3, res_4, res_5, res_6, res_7)
 temps_sec = vaisseau[indice-1]["capacite"]*vaisseau[indice-1]["vitesse"]*res[ressource-1]["coef"]
 
 temps_h = temps_sec // 3600
-minutes = temps_sec % 3600
+minutes_restantes = temps_sec % 3600
 
-temps_min = minutes // 60
-secondes = minutes % 60
+temps_min = minutes_restantes // 60
+secondes_restantes = minutes_restantes % 60
 
-print("\n\nVotre vaisseau aura fini de miner dans ", temps_h, " heure.s, ", temps_min, " minute.s et ", secondes, " seconde.s.")
+print("\n\nVotre vaisseau aura fini de miner dans ", temps_h, " heure.s, ", temps_min, " minute.s et ", secondes_restantes, " seconde.s.")
