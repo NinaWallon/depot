@@ -125,7 +125,7 @@ vaisseau = (vaisseau_1_1, vaisseau_1_2, vaisseau_1_3, vaisseau_1_4, vaisseau_1_5
 # cristal (pour améliorer les intercepteurs), minerai (pour améliorer les cuirassés)
 # ou latinium (pour la construction et l'assemblage de vaisseaux).
 
-print("\nListe de ressources à miner : \n 1) Parsteel (pour la construction de bâtiments de station) \n 2) Tritanium (pour la construction de coques et cloisons de vaisseaux) \n 3) Dilithium (pour la contruction de bâtiments et de vaisseaux) \n 4) Minerai (pour améliorer les cuirassés) \n 5) Gaz (pour améliorer les explorateurs) \n 6) Cristal (pour améliorer les intercepteurs) \n 7) Latinium (pour la construction et l'assemblage de vaisseaux) \n")
+print("\nListe de ressources à miner : \n 1) Parsteel \n 2) Tritanium \n 3) Dilithium \n 4) Minerai \n 5) Gaz \n 6) Cristal \n 7) Latinium \n")
 
 ressource = int(input("Quelle ressource voulez-vous miner ? \n Tapez un chiffre en 1 et 7 (voir liste des ressources ci-dessus) : "))
 
