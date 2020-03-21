@@ -3,7 +3,7 @@
 # 1 - Demander à l'utilisateur le type de vaisseau.
 # Cuirassé, Explorateur, Intercepteur ou Prospection (conseillé).
 
-print("Types de vaisseaux : \n 1) Cuirassé \n 2) Explorateur \n 3) Intercepteur \n 4) Prospection (conseillé) \n")
+print("\nTypes de vaisseaux : \n 1) Cuirassé \n 2) Explorateur \n 3) Intercepteur \n 4) Prospection (conseillé) \n")
 
 type_vaisseau = int(input("Quel type de vaisseau possédez-vous ? \n Tapez 1, 2, 3 ou 4 : "))
 
@@ -28,6 +28,8 @@ if type_vaisseau == 1 :
 
   if modele_vaisseau not in liste_cuirasse :
     modele_vaisseau = int(input("Erreur de saisi, veuillez recommencer. \nQuel modèle de vaisseau possédez-vous ? \n Tapez un chiffre entre 1 et 7 (voir liste des modèles ci-dessus) : "))
+  
+  indice = modele_vaisseau
 
 # Vaisseaux sous forme de dictionnaires avec capacité de chargement (en unités) + vitesse de minage (en sec/unité).
 
@@ -50,6 +52,8 @@ if type_vaisseau == 2 :
 
   if modele_vaisseau not in liste_explorateur :
     modele_vaisseau = int(input("Erreur de saisi, veuillez recommencer. \nQuel modèle de vaisseau possédez-vous ? \n Tapez un chiffre entre 1 et 9 (voir liste des modèles ci-dessus) : "))
+  
+  indice = 7 + modele_vaisseau
 
 # Vaisseaux sous forme de dictionnaires avec capacité de chargement (en unités) + vitesse de minage (en sec/unité).
 
@@ -75,6 +79,8 @@ if type_vaisseau == 3 :
   if modele_vaisseau not in liste_intercepteur :
     modele_vaisseau = int(input("Erreur de saisi, veuillez recommencer. \nQuel modèle de vaisseau possédez-vous ? \n Tapez un chiffre entre 1 et 7 (voir liste des modèles ci-dessus) : "))
 
+  indice = 16 + modele_vaisseau
+
 # Vaisseaux sous forme de dictionnaires avec capacité de chargement (en unités) + vitesse de minage (en sec/unité).
 
 vaisseau_3_1 = {"nom" : "Phindra" , "capacite" : 100 , "vitesse" : 1 }
@@ -97,6 +103,8 @@ if type_vaisseau == 4 :
   if modele_vaisseau not in liste_prospection :
     modele_vaisseau = int(input("Erreur de saisi, veuillez recommencer. \nQuel modèle de vaisseau possédez-vous ? \n Tapez un chiffre entre 1 et 8 (voir liste des modèles ci-dessus) : "))
 
+  indice = 23 + modele_vaisseau
+
 # Vaisseaux sous forme de dictionnaires avec capacité de chargement (en unités) + vitesse de minage (en sec/unité).
 
 vaisseau_4_1 = {"nom" : "ECS Fortunate" , "capacite" : 200 , "vitesse" : 2 }
@@ -108,6 +116,7 @@ vaisseau_4_6 = {"nom" : "ECS Horizon" , "capacite" : 1750 , "vitesse" : 8 }
 vaisseau_4_7 = {"nom" : "USS Antares" , "capacite" : 3000 , "vitesse" : 9 }
 vaisseau_4_8 = {"nom" : "Valkis" , "capacite" : 3000 , "vitesse" : 9 }
 
+vaisseau = (vaisseau_1_1, vaisseau_1_2, vaisseau_1_3, vaisseau_1_4, vaisseau_1_5, vaisseau_1_6, vaisseau_1_7, vaisseau_2_1, vaisseau_2_2, vaisseau_2_3, vaisseau_2_4, vaisseau_2_5, vaisseau_2_6, vaisseau_2_7, vaisseau_2_8, vaisseau_2_9, vaisseau_3_1, vaisseau_3_2, vaisseau_3_3, vaisseau_3_4, vaisseau_3_5, vaisseau_3_6, vaisseau_3_7, vaisseau_4_1, vaisseau_4_2, vaisseau_4_3, vaisseau_4_4, vaisseau_4_5, vaisseau_4_6, vaisseau_4_7, vaisseau_4_8)
 
 
 # 3 - Demander à l'utilisateur quelle ressource miner.
@@ -136,11 +145,18 @@ res_5 = {"nom" : "Gaz" , "coef" : 5}
 res_6 = {"nom" : "Cristal" , "coef" : 5}
 res_7 = {"nom" : "Latinium" , "coef" : 50}
 
+res = (res_1, res_2, res_3, res_4, res_5, res_6, res_7)
 
 # 4 - Calcul du temps de minage en fonction de la capacité de chargement et de la vitesse de minage du vaisseau
 # (le temps de chargement diffère en fonction de la ressource à miner).
 # Convertir les secondes en minutes voire en heures (+ lisible).
 
-temps = 
+temps_sec = vaisseau[indice-1]["capacite"]*vaisseau[indice-1]["vitesse"]*res[ressource-1]["coef"]
 
-print("\nVotre vaisseau aura fini de miner dans ", temps, " secondes.")
+temps_h = temps_sec // 3600
+minutes = temps_sec % 3600
+
+temps_min = minutes // 60
+secondes = minutes % 60
+
+print("\n\nVotre vaisseau aura fini de miner dans ", temps_h, " heure.s, ", temps_min, " minute.s et ", secondes, " seconde.s.")
