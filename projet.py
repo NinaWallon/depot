@@ -149,7 +149,7 @@ res = (res_1, res_2, res_3, res_4, res_5, res_6, res_7)
 
 # 4 - Calcul du temps de minage en fonction de la capacité de chargement et de la vitesse de minage du vaisseau
 # (le temps de chargement diffère en fonction de la ressource à miner).
-# Convertir les secondes en minutes voire en heures (+ lisible).
+# Convertir les secondes en heure.s, minute.s, seconde.s (+ lisible).
 
 temps_sec = vaisseau[indice-1]["capacite"]*vaisseau[indice-1]["vitesse"]*res[ressource-1]["coef"]
 
