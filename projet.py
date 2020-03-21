@@ -141,6 +141,6 @@ res_7 = {"nom" : "Latinium" , "coef" : 50}
 # (le temps de chargement diffère en fonction de la ressource à miner).
 # Convertir les secondes en minutes voire en heures (+ lisible).
 
-temps = vaisseau_type_vaisseau_modele_vaisseau["capacite"]*vaisseau_type_vaisseau_modele_vaisseau["vitesse"]*res_ressource["coef"]
+temps = 
 
 print("\nVotre vaisseau aura fini de miner dans ", temps, " secondes.")
