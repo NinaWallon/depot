@@ -9,7 +9,7 @@ type_vaisseau = int(input("Quel type de vaisseau possédez-vous ? \n Tapez 1, 2,
 
 liste_types = [1,2,3,4]
 
-if type_vaisseau not in liste_types :
+while type_vaisseau not in liste_types :
   type_vaisseau = int(input("Erreur de saisi, veuillez recommencer. \nQuel type de vaisseau possédez-vous ? \n Tapez 1, 2, 3 ou 4 : "))
 
 
@@ -27,7 +27,7 @@ if type_vaisseau == 1 :
   liste_cuirasse = [1,2,3,4,5,6,7]
 
   if modele_vaisseau not in liste_cuirasse :
-    modele_vaisseau = int(input("Erreur de saisi, veuillez recommencer. \nQuel modèle de vaisseau possédez-vous ? \n Tapez un chiffre entre 1 et 7 (voir liste des modèles ci-dessus) : "))
+    modele_vaisseau = int(input("\nErreur de saisi, veuillez recommencer. \nQuel modèle de vaisseau possédez-vous ? \n Tapez un chiffre entre 1 et 7 (voir liste des modèles ci-dessus) : "))
   
   indice = modele_vaisseau-1
 
@@ -50,8 +50,8 @@ if type_vaisseau == 2 :
 
   liste_explorateur = [1,2,3,4,5,6,7,8,9]
 
-  if modele_vaisseau not in liste_explorateur :
-    modele_vaisseau = int(input("Erreur de saisi, veuillez recommencer. \nQuel modèle de vaisseau possédez-vous ? \n Tapez un chiffre entre 1 et 9 (voir liste des modèles ci-dessus) : "))
+  while modele_vaisseau not in liste_explorateur :
+    modele_vaisseau = int(input("\nErreur de saisi, veuillez recommencer. \nQuel modèle de vaisseau possédez-vous ? \n Tapez un chiffre entre 1 et 9 (voir liste des modèles ci-dessus) : "))
   
   indice = 6 + modele_vaisseau
 
@@ -76,8 +76,8 @@ if type_vaisseau == 3 :
 
   liste_intercepteur = [1,2,3,4,5,6,7]
 
-  if modele_vaisseau not in liste_intercepteur :
-    modele_vaisseau = int(input("Erreur de saisi, veuillez recommencer. \nQuel modèle de vaisseau possédez-vous ? \n Tapez un chiffre entre 1 et 7 (voir liste des modèles ci-dessus) : "))
+  while modele_vaisseau not in liste_intercepteur :
+    modele_vaisseau = int(input("\nErreur de saisi, veuillez recommencer. \nQuel modèle de vaisseau possédez-vous ? \n Tapez un chiffre entre 1 et 7 (voir liste des modèles ci-dessus) : "))
 
   indice = 15 + modele_vaisseau
 
@@ -100,8 +100,8 @@ if type_vaisseau == 4 :
 
   liste_prospection = [1,2,3,4,5,6,7,8]
 
-  if modele_vaisseau not in liste_prospection :
-    modele_vaisseau = int(input("Erreur de saisi, veuillez recommencer. \nQuel modèle de vaisseau possédez-vous ? \n Tapez un chiffre entre 1 et 8 (voir liste des modèles ci-dessus) : "))
+  while modele_vaisseau not in liste_prospection :
+    modele_vaisseau = int(input("\nErreur de saisi, veuillez recommencer. \nQuel modèle de vaisseau possédez-vous ? \n Tapez un chiffre entre 1 et 8 (voir liste des modèles ci-dessus) : "))
 
   indice = 22 + modele_vaisseau
 
@@ -131,8 +131,8 @@ ressource = int(input("Quelle ressource voulez-vous miner ? \n Tapez un chiffre 
 
 liste_ressources = [1,2,3,4,5,6,7]
 
-if ressource not in liste_ressources :
-  ressource = int(input("Erreur de saisi, veuillez recommencer. \nQuelle ressource voulez-vous miner ? \n Tapez un chiffre entre 1 et 7 (voir liste des ressources ci-dessus) : "))
+while ressource not in liste_ressources :
+  ressource = int(input("\nErreur de saisi, veuillez recommencer. \nQuelle ressource voulez-vous miner ? \n Tapez un chiffre entre 1 et 7 (voir liste des ressources ci-dessus) : "))
 
 
 # Coefficient des ressources
