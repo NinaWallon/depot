@@ -105,7 +105,7 @@ if type_vaisseau == 4 :
 
   indice = 23 + modele_vaisseau
 
-# Vaisseaux sous forme de dictionnaires avec capacité de chargement (en unités) + vitesse de minage (en sec/unité).
+# Vaisseaux sous forme de dictionnaires avec capacité de chargement (en unités) + vitesse de minage (en unité/sec).
 
 vaisseau_4_1 = {"nom" : "ECS Fortunate" , "capacite" : 200 , "vitesse" : 2 }
 vaisseau_4_2 = {"nom" : "Envoy" , "capacite" : 900 , "vitesse" : 3 }
@@ -151,7 +151,7 @@ res = (res_1, res_2, res_3, res_4, res_5, res_6, res_7)
 # (le temps de chargement diffère en fonction de la ressource à miner).
 # Convertir les secondes en heure.s, minute.s, seconde.s (+ lisible).
 
-temps_sec = vaisseau[indice-1]["capacite"]*vaisseau[indice-1]["vitesse"]*res[ressource-1]["coef"]
+temps_sec = vaisseau[indice-1]["capacite"]/vaisseau[indice-1]["vitesse"]*res[ressource-1]["coef"]
 
 temps_h = temps_sec // 3600
 minutes_restantes = temps_sec % 3600
@@ -159,4 +159,4 @@ minutes_restantes = temps_sec % 3600
 temps_min = minutes_restantes // 60
 secondes_restantes = minutes_restantes % 60
 
-print("\n\nVotre vaisseau aura fini de miner dans ", temps_h, " heure.s, ", temps_min, " minute.s et ", secondes_restantes, " seconde.s.")
+print("\n\nVotre vaisseau aura fini de miner dans ", temps_h, " heure.s, ", temps_min, " minute.s et ", round(secondes_restantes,0), " seconde.s.")
