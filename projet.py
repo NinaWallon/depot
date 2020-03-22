@@ -29,7 +29,7 @@ if type_vaisseau == 1 :
   if modele_vaisseau not in liste_cuirasse :
     modele_vaisseau = int(input("Erreur de saisi, veuillez recommencer. \nQuel modèle de vaisseau possédez-vous ? \n Tapez un chiffre entre 1 et 7 (voir liste des modèles ci-dessus) : "))
   
-  indice = modele_vaisseau
+  indice = modele_vaisseau-1
 
 # Vaisseaux sous forme de dictionnaires avec capacité de chargement (en unités) + vitesse de minage (en sec/unité).
 
@@ -53,7 +53,7 @@ if type_vaisseau == 2 :
   if modele_vaisseau not in liste_explorateur :
     modele_vaisseau = int(input("Erreur de saisi, veuillez recommencer. \nQuel modèle de vaisseau possédez-vous ? \n Tapez un chiffre entre 1 et 9 (voir liste des modèles ci-dessus) : "))
   
-  indice = 7 + modele_vaisseau
+  indice = 6 + modele_vaisseau
 
 # Vaisseaux sous forme de dictionnaires avec capacité de chargement (en unités) + vitesse de minage (en sec/unité).
 
@@ -79,7 +79,7 @@ if type_vaisseau == 3 :
   if modele_vaisseau not in liste_intercepteur :
     modele_vaisseau = int(input("Erreur de saisi, veuillez recommencer. \nQuel modèle de vaisseau possédez-vous ? \n Tapez un chiffre entre 1 et 7 (voir liste des modèles ci-dessus) : "))
 
-  indice = 16 + modele_vaisseau
+  indice = 15 + modele_vaisseau
 
 # Vaisseaux sous forme de dictionnaires avec capacité de chargement (en unités) + vitesse de minage (en sec/unité).
 
@@ -103,7 +103,7 @@ if type_vaisseau == 4 :
   if modele_vaisseau not in liste_prospection :
     modele_vaisseau = int(input("Erreur de saisi, veuillez recommencer. \nQuel modèle de vaisseau possédez-vous ? \n Tapez un chiffre entre 1 et 8 (voir liste des modèles ci-dessus) : "))
 
-  indice = 23 + modele_vaisseau
+  indice = 22 + modele_vaisseau
 
 # Vaisseaux sous forme de dictionnaires avec capacité de chargement (en unités) + vitesse de minage (en unité/sec).
 
@@ -132,7 +132,7 @@ ressource = int(input("Quelle ressource voulez-vous miner ? \n Tapez un chiffre 
 liste_ressources = [1,2,3,4,5,6,7]
 
 if ressource not in liste_ressources :
-  ressource = int(input("Erreur de saisi, veuillez recommencer. \nQuelle ressource voulez-vous miner ? \n Tapez un chiffre en 1 et 7 (voir liste des ressources ci-dessus) : "))
+  ressource = int(input("Erreur de saisi, veuillez recommencer. \nQuelle ressource voulez-vous miner ? \n Tapez un chiffre entre 1 et 7 (voir liste des ressources ci-dessus) : "))
 
 
 # Coefficient des ressources
@@ -151,7 +151,7 @@ res = (res_1, res_2, res_3, res_4, res_5, res_6, res_7)
 # (le temps de chargement diffère en fonction de la ressource à miner).
 # Convertir les secondes en heure.s, minute.s, seconde.s (+ lisible).
 
-temps_sec = vaisseau[indice-1]["capacite"]/vaisseau[indice-1]["vitesse"]*res[ressource-1]["coef"]
+temps_sec = vaisseau[indice]["capacite"]/vaisseau[indice]["vitesse"]*res[ressource-1]["coef"]
 
 temps_h = temps_sec // 3600
 minutes_restantes = temps_sec % 3600
