@@ -83,13 +83,13 @@ if type_vaisseau == 3 :
 
 # Vaisseaux sous forme de dictionnaires avec capacité de chargement (en unités) + vitesse de minage (en sec/unité).
 
-vaisseau_3_1 = {"nom" : "Phindra" , "capacite" : 100 , "vitesse" : 1 }
-vaisseau_3_2 = {"nom" : "Kehra" , "capacite" : 80 , "vitesse" : 1 }
-vaisseau_3_3 = {"nom" : "Vi'Dar" , "capacite" : 100 , "vitesse" : 1 }
-vaisseau_3_4 = {"nom" : "Classe D3" , "capacite" : 100 , "vitesse" : 1 }
-vaisseau_3_5 = {"nom" : "Classe D4" , "capacite" : 200 , "vitesse" : 1 }
-vaisseau_3_6 = {"nom" : "USS Saladin" , "capacite" : 250 , "vitesse" : 1 }
-vaisseau_3_7 = {"nom" : "Gladius" , "capacite" : 230 , "vitesse" : 1 }
+vaisseau_3_1 = {"nom" : "Phindra" , "capacite" : 80 , "vitesse" : 1 }
+vaisseau_3_2 = {"nom" : "Kehra" , "capacite" : 200 , "vitesse" : 1 }
+vaisseau_3_3 = {"nom" : "Vi'Dar" , "capacite" : 2000 , "vitesse" : 1 }
+vaisseau_3_4 = {"nom" : "Classe D3" , "capacite" : 230 , "vitesse" : 1 }
+vaisseau_3_5 = {"nom" : "Classe D4" , "capacite" : 300 , "vitesse" : 1 }
+vaisseau_3_6 = {"nom" : "USS Saladin" , "capacite" : 230 , "vitesse" : 1 }
+vaisseau_3_7 = {"nom" : "Gladius" , "capacite" : 250 , "vitesse" : 1 }
 
 
 if type_vaisseau == 4 :
