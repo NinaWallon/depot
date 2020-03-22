@@ -127,7 +127,7 @@ vaisseau = (vaisseau_1_1, vaisseau_1_2, vaisseau_1_3, vaisseau_1_4, vaisseau_1_5
 
 print("\nListe de ressources à miner : \n 1) Parsteel \n 2) Tritanium \n 3) Dilithium \n 4) Minerai \n 5) Gaz \n 6) Cristal \n 7) Latinium \n")
 
-ressource = int(input("Quelle ressource voulez-vous miner ? \n Tapez un chiffre en 1 et 7 (voir liste des ressources ci-dessus) : "))
+ressource = int(input("Quelle ressource voulez-vous miner ? \n Tapez un chiffre entre 1 et 7 (voir liste des ressources ci-dessus) : "))
 
 liste_ressources = [1,2,3,4,5,6,7]
 
