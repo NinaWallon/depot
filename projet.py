@@ -10,7 +10,7 @@ type_vaisseau = int(input("Quel type de vaisseau possédez-vous ? \n Tapez 1, 2,
 liste_types = [1,2,3,4]
 
 while type_vaisseau not in liste_types :
-  type_vaisseau = int(input("Erreur de saisi, veuillez recommencer. \nQuel type de vaisseau possédez-vous ? \n Tapez 1, 2, 3 ou 4 : "))
+  type_vaisseau = int(input("\nErreur de saisi, veuillez recommencer. \nQuel type de vaisseau possédez-vous ? \n Tapez 1, 2, 3 ou 4 : "))
 
 
 
