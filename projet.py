@@ -120,10 +120,7 @@ vaisseau_4 = (vaisseau_4_1, vaisseau_4_2, vaisseau_4_3, vaisseau_4_4, vaisseau_4
 
 
 # 3 - Demander à l'utilisateur quelle ressource miner.
-# Parsteel (pour la construction de bâtiments de station), tritanium (pour la construction de coques et cloisons de vaisseaux),
-# dilithium (pour la contruction de bâtiments et de vaisseaux), gaz (pour améliorer les explorateurs),
-# cristal (pour améliorer les intercepteurs), minerai (pour améliorer les cuirassés)
-# ou latinium (pour la construction et l'assemblage de vaisseaux).
+# Parsteel, tritanium, dilithium, gaz, cristal, minerai ou latinium.
 
 print("\nListe de ressources à miner : \n 1) Parsteel \n 2) Tritanium \n 3) Dilithium \n 4) Minerai \n 5) Gaz \n 6) Cristal \n 7) Latinium \n")
 
