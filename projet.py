@@ -28,8 +28,6 @@ if type_vaisseau == 1 :
 
   if modele_vaisseau not in liste_cuirasse :
     modele_vaisseau = int(input("\nErreur de saisi, veuillez recommencer. \nQuel modèle de vaisseau possédez-vous ? \n Tapez un chiffre entre 1 et 7 (voir liste des modèles ci-dessus) : "))
-  
-  indice = modele_vaisseau-1
 
 # Vaisseaux sous forme de dictionnaires avec capacité de chargement (en unités) + vitesse de minage (en sec/unité).
 
@@ -40,6 +38,8 @@ vaisseau_1_4 = {"nom" : "Bortas" , "capacite" : 230 , "vitesse" : 1 }
 vaisseau_1_5 = {"nom" : "USS Intrepid" , "capacite" : 250 , "vitesse" : 1 }
 vaisseau_1_6 = {"nom" : "Legionary" , "capacite" : 230 , "vitesse" : 1 }
 vaisseau_1_7 = {"nom" : "Augur" , "capacite" : 300 , "vitesse" : 1 }
+
+vaisseau_1 = (vaisseau_1_1, vaisseau_1_2, vaisseau_1_3, vaisseau_1_4, vaisseau_1_5, vaisseau_1_6,vaisseau_1_7)
 
 
 if type_vaisseau == 2 :
@@ -52,8 +52,6 @@ if type_vaisseau == 2 :
 
   while modele_vaisseau not in liste_explorateur :
     modele_vaisseau = int(input("\nErreur de saisi, veuillez recommencer. \nQuel modèle de vaisseau possédez-vous ? \n Tapez un chiffre entre 1 et 9 (voir liste des modèles ci-dessus) : "))
-  
-  indice = 6 + modele_vaisseau
 
 # Vaisseaux sous forme de dictionnaires avec capacité de chargement (en unités) + vitesse de minage (en sec/unité).
 
@@ -67,6 +65,8 @@ vaisseau_2_7 = {"nom" : "USS Mayflower" , "capacite" : 230 , "vitesse" : 1 }
 vaisseau_2_8 = {"nom" : "USS Enterprise" , "capacite" : 300 , "vitesse" : 1 }
 vaisseau_2_9 = {"nom" : "Centurion" , "capacite" : 230 , "vitesse" : 1 }
 
+vaisseau_2 = (vaisseau_2_1, vaisseau_2_2, vaisseau_2_3, vaisseau_2_4, vaisseau_2_5, vaisseau_2_6, vaisseau_2_7, vaisseau_2_8, vaisseau_2_9)
+
 
 if type_vaisseau == 3 :
 
@@ -79,8 +79,6 @@ if type_vaisseau == 3 :
   while modele_vaisseau not in liste_intercepteur :
     modele_vaisseau = int(input("\nErreur de saisi, veuillez recommencer. \nQuel modèle de vaisseau possédez-vous ? \n Tapez un chiffre entre 1 et 7 (voir liste des modèles ci-dessus) : "))
 
-  indice = 15 + modele_vaisseau
-
 # Vaisseaux sous forme de dictionnaires avec capacité de chargement (en unités) + vitesse de minage (en sec/unité).
 
 vaisseau_3_1 = {"nom" : "Phindra" , "capacite" : 80 , "vitesse" : 1 }
@@ -90,6 +88,8 @@ vaisseau_3_4 = {"nom" : "Classe D3" , "capacite" : 230 , "vitesse" : 1 }
 vaisseau_3_5 = {"nom" : "Classe D4" , "capacite" : 300 , "vitesse" : 1 }
 vaisseau_3_6 = {"nom" : "USS Saladin" , "capacite" : 230 , "vitesse" : 1 }
 vaisseau_3_7 = {"nom" : "Gladius" , "capacite" : 250 , "vitesse" : 1 }
+
+vaisseau_3 = (vaisseau_3_1, vaisseau_3_2, vaisseau_3_3, vaisseau_3_4, vaisseau_3_5, vaisseau_3_6,vaisseau_3_7)
 
 
 if type_vaisseau == 4 :
@@ -103,8 +103,6 @@ if type_vaisseau == 4 :
   while modele_vaisseau not in liste_prospection :
     modele_vaisseau = int(input("\nErreur de saisi, veuillez recommencer. \nQuel modèle de vaisseau possédez-vous ? \n Tapez un chiffre entre 1 et 8 (voir liste des modèles ci-dessus) : "))
 
-  indice = 22 + modele_vaisseau
-
 # Vaisseaux sous forme de dictionnaires avec capacité de chargement (en unités) + vitesse de minage (en unité/sec).
 
 vaisseau_4_1 = {"nom" : "ECS Fortunate" , "capacite" : 200 , "vitesse" : 2 }
@@ -117,6 +115,8 @@ vaisseau_4_7 = {"nom" : "USS Antares" , "capacite" : 3000 , "vitesse" : 9 }
 vaisseau_4_8 = {"nom" : "Valkis" , "capacite" : 3000 , "vitesse" : 9 }
 
 vaisseau = (vaisseau_1_1, vaisseau_1_2, vaisseau_1_3, vaisseau_1_4, vaisseau_1_5, vaisseau_1_6, vaisseau_1_7, vaisseau_2_1, vaisseau_2_2, vaisseau_2_3, vaisseau_2_4, vaisseau_2_5, vaisseau_2_6, vaisseau_2_7, vaisseau_2_8, vaisseau_2_9, vaisseau_3_1, vaisseau_3_2, vaisseau_3_3, vaisseau_3_4, vaisseau_3_5, vaisseau_3_6, vaisseau_3_7, vaisseau_4_1, vaisseau_4_2, vaisseau_4_3, vaisseau_4_4, vaisseau_4_5, vaisseau_4_6, vaisseau_4_7, vaisseau_4_8)
+
+vaisseau_4 = (vaisseau_4_1, vaisseau_4_2, vaisseau_4_3, vaisseau_4_4, vaisseau_4_5, vaisseau_4_6, vaisseau_4_7, vaisseau_4_8)
 
 
 # 3 - Demander à l'utilisateur quelle ressource miner.
@@ -151,7 +151,7 @@ res = (res_1, res_2, res_3, res_4, res_5, res_6, res_7)
 # (le temps de chargement diffère en fonction de la ressource à miner).
 # Convertir les secondes en heure.s, minute.s, seconde.s (+ lisible).
 
-temps_sec = vaisseau[indice]["capacite"]/vaisseau[indice]["vitesse"]*res[ressource-1]["coef"]
+temps_sec = vaisseau[type_vaisseau-1][modele_vaisseau-1]["capacite"]/vaisseau[type_vaisseau-1][modele_vaisseau-1]["vitesse"]*res[ressource-1]["coef"]
 
 temps_h = temps_sec // 3600
 minutes_restantes = temps_sec % 3600
