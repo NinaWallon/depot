@@ -118,6 +118,8 @@ vaisseau = (vaisseau_1_1, vaisseau_1_2, vaisseau_1_3, vaisseau_1_4, vaisseau_1_5
 
 vaisseau_4 = (vaisseau_4_1, vaisseau_4_2, vaisseau_4_3, vaisseau_4_4, vaisseau_4_5, vaisseau_4_6, vaisseau_4_7, vaisseau_4_8)
 
+vaisseau = (vaisseau_1, vaisseau_2, vaisseau_3, vaisseau_4)
+
 
 # 3 - Demander à l'utilisateur quelle ressource miner.
 # Parsteel, tritanium, dilithium, gaz, cristal, minerai ou latinium.
