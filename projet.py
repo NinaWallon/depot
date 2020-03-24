@@ -114,8 +114,6 @@ vaisseau_4_6 = {"nom" : "ECS Horizon" , "capacite" : 1750 , "vitesse" : 8 }
 vaisseau_4_7 = {"nom" : "USS Antares" , "capacite" : 3000 , "vitesse" : 9 }
 vaisseau_4_8 = {"nom" : "Valkis" , "capacite" : 3000 , "vitesse" : 9 }
 
-vaisseau = (vaisseau_1_1, vaisseau_1_2, vaisseau_1_3, vaisseau_1_4, vaisseau_1_5, vaisseau_1_6, vaisseau_1_7, vaisseau_2_1, vaisseau_2_2, vaisseau_2_3, vaisseau_2_4, vaisseau_2_5, vaisseau_2_6, vaisseau_2_7, vaisseau_2_8, vaisseau_2_9, vaisseau_3_1, vaisseau_3_2, vaisseau_3_3, vaisseau_3_4, vaisseau_3_5, vaisseau_3_6, vaisseau_3_7, vaisseau_4_1, vaisseau_4_2, vaisseau_4_3, vaisseau_4_4, vaisseau_4_5, vaisseau_4_6, vaisseau_4_7, vaisseau_4_8)
-
 vaisseau_4 = (vaisseau_4_1, vaisseau_4_2, vaisseau_4_3, vaisseau_4_4, vaisseau_4_5, vaisseau_4_6, vaisseau_4_7, vaisseau_4_8)
 
 vaisseau = (vaisseau_1, vaisseau_2, vaisseau_3, vaisseau_4)
