@@ -163,7 +163,7 @@ def extremites(liste):
 
 class Mot():
     
-    def __init__(self, mot):
+    def __init__(self,mot):
          self.mot = mot 
          
     def comptelettre(caractere):
@@ -188,10 +188,15 @@ def tri_et_inverse(liste):
 
 ville_nom_pays = {'Paris':'France', 'Berlin':'Allemagne', 'Madrid':'Espagne','Moscou':'Russie'}
 
+class Pays():
+  def __init__(self,nom, visa):
+         self.nom = nom
+         self.visa = visa
+  
+ville_pays = {'Paris': Pays('France',False), 'Berlin': Pays('Allemagne',False), 'Madrid': Pays('Espagne',False),'Moscou': Pays('Russie',True)}
 
 def aller_a_paris(input_call=input):
     # code a remplir
-
     # quelque part dans le code de cette fonction: saisie = input_call('Question ')
     # en fonction de saisie on continue a demander ou on renvoie 'Paris'
     # Au lieu d'utiliser input comme en cours vous appelez input_call
