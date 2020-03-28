@@ -1,2 +1,2 @@
 language = "python3"
-run = "python projet.py"
+run = "python controle.py"
